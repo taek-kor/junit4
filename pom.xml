@@ -410,7 +410,7 @@
                     </reportSet>
                 </reportSets>
             </plugin>
-            <plugin>
+         <!--     <plugin>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>${javadocPluginVersion}</version>
                 <configuration>
@@ -450,8 +450,13 @@
                         </reports>
                     </reportSet>
                 </reportSets>
-            </plugin>
-        </plugins>
+            </plugin> -->
+            <plugin>
+       		 <groupId>org.apache.maven.plugins</groupId>
+       			 <artifactId>maven-pmd-plugin</artifactId>
+       		 <version>3.14.0</version>
+     	 </plugin>
+       </plugins>
     </reporting>
 
     <profiles>
